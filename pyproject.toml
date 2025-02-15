@@ -1,15 +1,18 @@
 [tool.poetry]
 name = "unused-deps"
 version = "0.1.0"
-description = ""
-authors = ["Nathan Furnal <nathanfurnal.dev@gmail.com>"]
+description = "Find and remove unused Python dependencies in your virtual environment"
+authors = [
+    "Nathan Furnal <nathanfurnal.dev@gmail.com>",
+    "Carlos Rivas <signifer.geo@yandex.com>"
+]
 readme = "README.md"
 packages = [{include = "unused_deps"}]
 
 [tool.poetry.dependencies]
 python = ">=3.10"
 pyyaml = "^6.0"
-
+packaging = "^23.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
